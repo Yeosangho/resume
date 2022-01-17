@@ -1,6 +1,6 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
-import { faGithub, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import image from '../asset/pepe.jpg';
 import { IProfile } from '../component/profile/IProfile';
 
@@ -10,12 +10,11 @@ const profile: IProfile.Payload = {
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
   image,
   name: {
-    title: 'Lorem ipsum',
-    small: '(LI)',
+    title: '여상호 | 분산 딥러닝 / 강화학습 엔지니어 입니다',
   },
   contact: [
     {
-      title: 'foo@bar.xyz',
+      title: 'soboru963@ajou.ac.kr',
       link: '#',
       icon: faEnvelope,
     },
@@ -25,23 +24,13 @@ const profile: IProfile.Payload = {
       badge: true,
     },
     {
-      title: 'https://github.com',
-      link: 'https://github.com/Yeosangho/resume',
+      title: 'https://github.com/Yeosangho',
+      link: 'https://github.com/Yeosangho',
       icon: faGithub,
-    },
-    {
-      link: 'https://www.facebook.com/iu.loen',
-      icon: faFacebook,
-    },
-    {
-      title: 'YouTube',
-      link: 'https://www.youtube.com/channel/UC3SyT4_WLHzN7JmHQwKQZww',
-      // icon: faRss,
-      icon: faYoutube,
     },
   ],
   notice: {
-    title: "This resume is a sample page of 'https://github.com/uyu423/resume-nextjs'.",
+    title: '각 연구/프로젝트에 대한 상세 설명 깃헙 리포지터리 별 리드미 파일 참조 부탁드립니다.',
     icon: faBell,
   },
 };

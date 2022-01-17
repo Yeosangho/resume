@@ -16,6 +16,7 @@ import { Skill } from '../component/skill';
 import { Style } from '../component/common/Style';
 import Payload from '../payload';
 import { Article } from '../component/article';
+import { Research } from '../component/research';
 
 function Yosume() {
   return (
@@ -28,6 +29,7 @@ function Yosume() {
       <Container style={Style.global}>
         <Profile.Component payload={Payload.profile} />
         <Introduce.Component payload={Payload.introduce} />
+        <Research.Component payload={Payload.research} />
         <Skill.Component payload={Payload.skill} />
         <Experience.Component payload={Payload.experience} />
         <Project.Component payload={Payload.project} />

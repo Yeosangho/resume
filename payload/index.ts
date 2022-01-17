@@ -4,6 +4,7 @@ import skill from './skill';
 import experience from './experience';
 import openSource from './openSource';
 import project from './project';
+import research from './research';
 import presentation from './presentation';
 import education from './education';
 import article from './article';
@@ -24,6 +25,7 @@ import { IEtc } from '../component/etc/IEtc';
 import { IFooter } from '../component/footer/IFooter';
 import { IGlobal } from '../component/common/IGlobal';
 import { IArticle } from '../component/article/IArticle';
+import { IResearch } from '../component/research/IResearch';
 
 const Payload: Payload = {
   profile,
@@ -33,6 +35,7 @@ const Payload: Payload = {
   experience,
   project,
   presentation,
+  research,
   article,
   education,
   etc,
@@ -48,6 +51,7 @@ interface Payload {
   openSource: IOpenSource.Payload;
   experience: IExperience.Payload;
   project: IProject.Payload;
+  research: IResearch.Payload;
   presentation: IPresentation.Payload;
   education: IEducation.Payload;
   article: IArticle.Payload;
