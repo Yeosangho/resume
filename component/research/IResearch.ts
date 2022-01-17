@@ -1,4 +1,4 @@
-import { IRow } from '../common/IRow';
+// import { IRow } from '../common/IRow';
 import { ICommon } from '../common/ICommon';
 
 export declare namespace IResearch {
@@ -21,12 +21,19 @@ export declare namespace IResearch {
     /** ### 발표 서브 타이틀 */
     subTitle: string;
     author: string;
+
+    firstauthor: string;
+    coauthor: string;
+    review: string;
+    planned: string;
+
     /**
 
      */
     type: string;
-
+    skillKeywords?: string[];
     /** ### 발표 설명 */
-    descriptions: IRow.Description[];
+    // descriptions: IRow.Description[];
+    descriptions: string[];
   }
 }

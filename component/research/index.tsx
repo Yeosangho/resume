@@ -1,8 +1,11 @@
 import { PropsWithChildren } from 'react';
-import { CommonSection } from '../common/CommonSection';
-import PresentationRow from './row';
+import { Col, Row } from 'reactstrap';
+// import { CommonSection } from '../common/CommonSection';
+import ResearchRow from './row';
 import { IResearch } from './IResearch';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import { EmptyRowCol } from '../common';
+import { Style } from '../common/Style';
 
 type Payload = IResearch.Payload;
 
@@ -17,8 +20,17 @@ export const Research = {
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
-    <CommonSection title="RESEARCHES">
-      <PresentationRow payload={payload} />
-    </CommonSection>
+    <div className="mt-5">
+      <EmptyRowCol>
+        <Row className="pb-3">
+          <Col>
+            <h2 style={Style.blue}>RESEARCH </h2>
+          </Col>
+        </Row>
+        {payload.list.map((item, index) => (
+          <ResearchRow key={index.toString()} item={item} index={index} />
+        ))}
+      </EmptyRowCol>
+    </div>
   );
 }
