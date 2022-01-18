@@ -20,7 +20,7 @@ export function CommonRows({
         <Col sm={12} md={3} className="text-md-right">
           <Row>
             <Col md={12}>
-              <h4 style={Style.gray}>{left.title}</h4>
+              <h6 style={Style.gray}>{left.title}</h6>
             </Col>
             {left.subTitle ? <Col md={12}>{left.subTitle}</Col> : ''}
           </Row>
