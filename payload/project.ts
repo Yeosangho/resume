@@ -71,12 +71,14 @@ const project: IProject.Payload = {
           ],
         },
       ],
+      link: 'https://www.google.com',
+      skillKeywords: ['Multi-agent Reinforcement Learning', 'PyTorch', 'Java', 'Python'],
     },
     {
       title: '분산 딥러닝 관련 KISTI 용역과제 수행',
       startedAt: '2018-05',
       endedAt: '2019-10',
-      where: '한국',
+      where: '한국과학기술정보연구원(KISTI)',
       descriptions: [
         {
           content:
@@ -130,33 +132,133 @@ const project: IProject.Payload = {
           ],
         },
       ],
-      link: 'https://www.google.com',
-      skillKeywords: ['a', 'b'],
+      skillKeywords: ['Singlularity', 'Caffe2', 'Distributed Deep Learning'],
     },
     {
-      title: '키스티 클러스터 무상 대여 프로그램(R&D 혁신지원 프로그램) 수행',
-      startedAt: '2018-05',
-      endedAt: '2019-10',
-      where: 'Bar Co., LTD.',
+      title: 'KISTI 클러스터 무상 대여 프로그램(R&D 혁신지원 프로그램) 수행',
+      startedAt: '2020-08',
+      endedAt: '2022-08',
+      where: '한국과학기술정보연구원(KISTI)',
       descriptions: [
-        { content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' },
-        { content: 'Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor' },
-        { content: 'Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien' },
-        { content: 'Proin bibendum non nibh eu aliquet' },
+        {
+          content:
+            '요약 : KISTI의 클러스터 무상 대여 프로그램(R&D 혁신지원 프로그램)에 2년 연속 통과 및 총 8천만원의 활용시간을 무상대여',
+        },
+        {
+          content:
+            '분산딥러닝의 large minibatch 문제 완화 및 성능 향상을 위한 GPU 클러스터 환경에서의 탈중앙화 통신 확장성 향상 연구(2020-2021)',
+          weight: 'MEDIUM',
+          descriptions: [
+            // Challenge -> how -> Result
+            {
+              content:
+                'What : large-minibatch problem 문제를 완화시킬 수 있는 가십 기반 탈중앙화 통신 방안에 대해 연구를 수행함.',
+            },
+            {
+              content:
+                'Challenge : 실험의 가치를 높이기 위해 정확도를 유지하면서 ResNet50의 최대 미니배치사이즈(86,016)을 도달하는 것이 매우 어려웠음. 또한, 미니배치를 높여감에 따라 가장 정확도를 높일 수 있는 러닝레이트를 찾는데 시간이 매우 오래걸림.',
+            },
+            {
+              content:
+                'Result : ResNet50에서 정확도를 유지할 수 있는 최대 미니배치 사이즈에 도달함. 기존 가십 기반 탈중앙화 통신방식 대비 수렴정확도가 더 높음을 확인하였으며, 제안기법을 SCI 논문지에 제출함.',
+            },
+            {
+              content:
+                'Limitation : Cifar10 데이터셋을 활용한 실험에서는 실제로 가십기반 통신이 정확도가 더 높았으나, 이미지넷 데이터를 활용한 경우 AllReduce를 활용한 방식이 더 높은 정확도를 가지게됨. 또한, Large mini-batch 문제가 왜 완화되는지에 대한 원인 정의에 실패함. ',
+            },
+          ],
+        },
+        {
+          content:
+            '고급 네트워크 환경을 가지는 슈퍼컴퓨터에서의 분산 딥러닝 학습 속도 향상을 위한 통신 스케쥴링 기법 연구(2021-2022)',
+          weight: 'MEDIUM',
+          descriptions: [
+            // Challenge -> how -> Result
+            {
+              content:
+                'What : 네트워크 대역폭이 충분한 환경에서 멀티 쓰레드 통신을 활용한 분산딥러닝 통신 스케쥴링',
+            },
+            {
+              content:
+                'Challenge : 제안서 작성 후, 동일 아이디어의 연구를 확인하였으며, 따라서 아이디어를 전면 수정함.',
+            },
+            {
+              content:
+                'Result : 데이터 병렬화 기반 분산딥러닝의 메모리 활용 문제를 고려할 수 있는 새로운 통신 스케쥴링 기법을 제안하고 졸업논문으로 작성 예정',
+            },
+          ],
+        },
       ],
-      link: 'https://www.google.com',
-      skillKeywords: ['a', 'b'],
     },
     {
       title: '클라우드 transient 자원 기반의 고성능 분산 딥러닝을 위한 학습 기법 연구',
-      startedAt: '2018-05',
-      endedAt: '2019-10',
-      where: 'Bar Co., LTD.',
+      startedAt: '2021-06',
+      endedAt: '2024-02',
+      where: '한국연구재단 기초연구과제',
       descriptions: [
-        { content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' },
-        { content: 'Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor' },
-        { content: 'Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien' },
-        { content: 'Proin bibendum non nibh eu aliquet' },
+        {
+          content:
+            '요약 : 클라우드 transient 자원(예: AWS 스팟 인스턴스)를 활용한 분산 딥러닝을 주제로 주도적으로 연구 아이디어를 제안하고 제안서를 통과시켜, 총 1억 5천만원의 과제비 충당.',
+        },
+        {
+          content: '연구주제 1 : Large mini-batch 문제 해결을 위한 pipeline 기반 Local SGD 기법',
+          weight: 'MEDIUM',
+          descriptions: [
+            // Challenge -> how -> Result
+            {
+              content:
+                'What : 미니배치가 증가함에 따라 최종 수렴 정확도가 감소하는 large mini-batch 문제를 해결하기 위해 local SGD를 활용함',
+            },
+            {
+              content:
+                'Challenge : local SGD는 미니배치를 나눈 마이크로 미니배치마다 학습을 반복하여 진행하여 GPU 활용률이 낮아질 수 있음.',
+            },
+            {
+              content:
+                'Result : local SGD 방식과 파이프라인 병렬화를 병합하여 멀티 스트림를 활용한 파이프라인 local SGD를 제시함.',
+            },
+          ],
+        },
+        {
+          content:
+            '연구주제 2 : 탄력적인 가십 네트워크 토폴로지의 spectral gap에 기반한 적응형 가십 피어 수 조정 기법',
+          weight: 'MEDIUM',
+          descriptions: [
+            // Challenge -> how -> Result
+            {
+              content:
+                'What : 클라우드 인스턴스는 HPC 클러스터 대비 네트워크 대역폭이 낮아 분산 딥러닝 학습에서 가십 기반 통신 토롤로지의 활용이 필요함.',
+            },
+            {
+              content:
+                'Challenge : 클라우드 trasient 자원 환경에서는 네트워크 토폴로지가 고정되지 않으며, 매 반복마다 통신되는 피어의 수마다 학습 효율이 달라지므로 피어 수와 토폴로지를 적절하게 조정해야함',
+            },
+            {
+              content:
+                'Result : 가십 통신 토롤로지의 spectral gap 값을 모니터링하며 가십 통신에 의한 모델 업데이트의 오차를 적응형으로 조정하는 방안 제시',
+            },
+          ],
+        },
+        {
+          content:
+            '연구주제 3 : 클라우드 transient 자원 환경에서의 멤버쉽 관리 및 segment checkpoint 기법',
+          weight: 'MEDIUM',
+          descriptions: [
+            // Challenge -> how -> Result
+            {
+              content:
+                'What : 분산 학습 과정에서 인스턴스의 점유 이탈 과정에 효과적으로 대응할 수 있는 방안이 필요함.',
+            },
+            {
+              content:
+                'Challenge : 각 인스턴스의 Liveness를 주기적으로 탐색해야하는 비용이 추가 요구되며, 새로운 인스턴스 참여로 인한 학습 중단이 발생',
+            },
+            {
+              content:
+                'Result : Liveness 탐색 부하를 줄이기 위한 Piggy backing 방식의 멤버쉽 관리 및 Segment checkpoint 방식을 통한 부분적 학습 중단',
+            },
+          ],
+        },
       ],
       link: 'https://www.google.com',
       skillKeywords: ['a', 'b'],
