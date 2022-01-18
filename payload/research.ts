@@ -27,10 +27,10 @@ const research: IResearch.Payload = {
     {
       title:
         'Achieving Balanced Load Distribution with Reinforcement Learning-Based Switch Migration in Distributed SDN Controllers',
-      subTitle: 'MDPI Electronics ()',
+      subTitle: 'MDPI Electronics (Impact factor : 2.397, Q3)',
       author: 'Sangho Yeo, Ye Naing, Taeha Kim, Sangyoon Oh',
       type: '',
-      descriptions: ['Status : Published', 'Impact factor : 2.397, Q3'],
+      descriptions: ['Status : Published'],
       skillKeywords: [
         'Reinforcement Learning',
         'Multi Agent Reinforcement Learning',
@@ -101,7 +101,7 @@ const research: IResearch.Payload = {
         'Accelerating Deep Reinforcement Learning Using Human Demonstration Data Based on Dual Replay Buffer Management and Online Frame Skipping',
       subTitle: 'IEEE Bigcomp 2019',
       author: 'Sangho Yeo, Sangyoon Oh, Minsu Lee',
-      type: '국외 학술대회',
+      type: '',
       descriptions: ['Status : Published'],
       skillKeywords: ['Deep Reinforcement Learning', 'Imitation Learning', 'Python', 'Tensorflow'],
     },
@@ -142,7 +142,7 @@ const research: IResearch.Payload = {
         'Gossip 네트워크 토폴로지 변화에 따른 Spectral gap 분석을 통한 정보 전파지연 현상 해석',
       subTitle: 'JCCI 2021',
       author: '여상호, 오상윤',
-      type: '국내 컨퍼런스',
+      type: '',
       descriptions: ['Status : Published'],
       skillKeywords: [
         'Distributed Deep Learning',
@@ -156,7 +156,7 @@ const research: IResearch.Payload = {
         '도시 화재 시뮬레이션에서의 효과적인 화재 대응을 위한 강화학습 적용 솔루션의 설계 및 구현',
       subTitle: 'ACK 2021',
       author: '여상호, 오상윤',
-      type: '국내 컨퍼런스',
+      type: '',
       descriptions: ['Status : Published'],
       skillKeywords: [
         'Reinforcement Learning',
