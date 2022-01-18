@@ -63,10 +63,10 @@ function createSkillKeywords(skillKeywords?: string[]) {
 
 function createWorkingPeriod(
   itemtype: string,
-  firstauthor: string,
-  coauthor: string,
-  planned: string,
-  review: string,
+  firstauthor?: string,
+  coauthor?: string,
+  planned?: string,
+  review?: string,
 ) {
   return (
     <Row>
@@ -74,10 +74,10 @@ function createWorkingPeriod(
         <h4 style={Style.gray}>{itemtype}</h4>
       </Col>
       <Col md={12} xs={3} className="text-md-right text-center">
-        <Badge color="info">{firstauthor}</Badge>
-        <Badge color="info">{coauthor}</Badge>
-        <Badge color="info">{planned}</Badge>
-        <Badge color="info">{review}</Badge>
+        {firstauthor ? <Badge color="primary">1저자 : {firstauthor}</Badge> : ''}
+        {coauthor ? <Badge color="dark">공저자 : {coauthor}</Badge> : ''}
+        {review ? <Badge color="warning">심사중 : {review}</Badge> : ''}
+        {planned ? <Badge color="secondary">계획 : {planned}</Badge> : ''}
       </Col>
     </Row>
   );

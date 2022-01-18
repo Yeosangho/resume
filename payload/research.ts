@@ -28,8 +28,6 @@ const research: IResearch.Payload = {
       type: '',
       firstauthor: '1',
       coauthor: '2',
-      planned: '1',
-      review: '1',
       descriptions: [
         'Status : Published',
         'Impact factor : 2.716, Q2',

@@ -22,10 +22,10 @@ export declare namespace IResearch {
     subTitle: string;
     author: string;
 
-    firstauthor: string;
-    coauthor: string;
-    review: string;
-    planned: string;
+    firstauthor?: string;
+    coauthor?: string;
+    review?: string;
+    planned?: string;
 
     /**
 
