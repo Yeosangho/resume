@@ -156,7 +156,7 @@ const project: IProject.Payload = {
             },
             {
               content:
-                'Challenge : 실험의 가치를 높이기 위해 정확도를 유지하면서 ResNet50의 최대 미니배치사이즈(86,016)을 도달하는 것이 매우 어려웠음. 또한, 미니배치를 높여감에 따라 가장 정확도를 높일 수 있는 러닝레이트를 찾는데 시간이 매우 오래걸림.',
+                'Challenge : 실험의 가치를 높이기 위해 정확도를 유지할 수 있는 현존 ResNet50의 최대 미니배치사이즈(86,016)을 도달하는 것이 매우 어려웠음. 또한, 미니배치를 높여감에 따라 가장 정확도를 높일 수 있는 러닝레이트를 찾는데 시간이 매우 오래걸림.',
             },
             {
               content:
@@ -264,15 +264,23 @@ const project: IProject.Payload = {
       skillKeywords: ['a', 'b'],
     },
     {
-      title: '클라우드 transient 자원 기반의 고성능 분산 딥러닝을 위한 학습 기법 연구',
-      startedAt: '2018-05',
-      endedAt: '2019-10',
-      where: 'Bar Co., LTD.',
+      title: '구조건전성평가 응용을 위한 영상데이터 패턴인식 초고속 병렬화 연구',
+      startedAt: '2017-03',
+      endedAt: '2017-10',
+      where: '한국과학기술정보연구원(KISTI)',
       descriptions: [
-        { content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' },
-        { content: 'Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor' },
-        { content: 'Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien' },
-        { content: 'Proin bibendum non nibh eu aliquet' },
+        {
+          content:
+            'What : GPU 임베디드 보드(Jetson TX1)을 활용한 저전력 환경에서의 이미지 분류 기법 연구',
+        },
+        {
+          content:
+            'Challenge : 서버 환경 대비 설치 가능한 프레임워크에 제약이 많아 생각대로 할 수 없는 부분이 많았음.',
+        },
+        {
+          content:
+            'Result : GPU 임베디드 보드(Jetson TX1)의 Unified Memory를 활용한 이미지 처리 방안을 제시함.',
+        },
       ],
       link: 'https://www.google.com',
       skillKeywords: ['a', 'b'],

@@ -4,27 +4,19 @@ const backend: ISkill.Skill = {
   category: 'Deep Learning',
   items: [
     {
-      title: 'Node.js',
-      level: 3,
-    },
-    {
-      title: 'AWS',
-      level: 3,
-    },
-    {
-      title: 'PHP',
+      title: 'Deep Reinforcement Learning',
       level: 2,
     },
     {
-      title: 'Java',
-      level: 1,
+      title: 'Multi-agent Reinforcement Learning',
+      level: 2,
     },
     {
-      title: 'Python',
-      level: 1,
+      title: 'Distributed Deep Learning',
+      level: 3,
     },
     {
-      title: 'C/C++',
+      title: 'Deep Learning Model for Image Classification',
       level: 1,
     },
   ],
@@ -34,19 +26,11 @@ const database: ISkill.Skill = {
   category: 'Optimization algorithm',
   items: [
     {
-      title: 'MySQL',
-      level: 3,
+      title: '(Integer) Linear Programming',
+      level: 1,
     },
     {
-      title: 'Oracle',
-      level: 2,
-    },
-    {
-      title: 'Redis',
-      level: 2,
-    },
-    {
-      title: 'MongoDB',
+      title: 'Genetic Algorithm',
       level: 1,
     },
   ],
@@ -56,12 +40,12 @@ const frontend: ISkill.Skill = {
   category: 'Language',
   items: [
     {
-      title: 'Next.js',
+      title: 'Node.js',
       level: 2,
     },
     {
-      title: 'React.js',
-      level: 2,
+      title: 'Java',
+      level: 3,
     },
     {
       title: 'javascript',
@@ -78,22 +62,23 @@ const etc: ISkill.Skill = {
   category: 'Framework',
   items: [
     {
-      title: 'Ubuntu',
+      title: 'Tensorflow',
     },
     {
-      title: 'Vim',
+      title: 'PyTorch',
     },
     {
-      title: 'Security',
+      title: 'Hadoop',
     },
     {
-      title: 'VS Code',
+      title: 'Spark',
+    },
+
+    {
+      title: 'AWS EC2',
     },
     {
-      title: 'Jira',
-    },
-    {
-      title: 'Confluence',
+      title: 'AWS S3',
     },
   ],
 };
