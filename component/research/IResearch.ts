@@ -35,5 +35,6 @@ export declare namespace IResearch {
     /** ### 발표 설명 */
     // descriptions: IRow.Description[];
     descriptions: string[];
+    link?: string;
   }
 }

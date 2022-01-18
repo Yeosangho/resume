@@ -3,6 +3,8 @@ import { PropsWithChildren } from 'react';
 import { Row, Col, Badge } from 'reactstrap';
 import { IResearch } from './IResearch';
 import { Style } from '../common/Style';
+import { HrefTargetBlank } from '../common';
+
 // import Util from '../common/Util';
 
 export default function ResearchRow({
@@ -32,6 +34,13 @@ export default function ResearchRow({
             ))}
             {createSkillKeywords(item.skillKeywords)}
           </ul>
+          {item.link ? (
+            <i style={Style.black}>
+              코드 및 상세설명 : <HrefTargetBlank url={item.link} text={item.link} />
+            </i>
+          ) : (
+            ''
+          )}
         </Col>
       </Row>
     </div>

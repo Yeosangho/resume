@@ -28,11 +28,8 @@ const research: IResearch.Payload = {
       type: '',
       firstauthor: '1',
       coauthor: '2',
-      descriptions: [
-        'Status : Published',
-        'Impact factor : 2.716, Q2',
-        'Detail info & code: www.google.com',
-      ],
+      descriptions: ['Status : Published', 'Impact factor : 2.716, Q2'],
+      link: 'www.google.com',
     },
   ],
 };

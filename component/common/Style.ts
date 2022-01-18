@@ -4,6 +4,7 @@ import { CSSProperties } from 'react';
 type TStyleKey =
   | 'blue'
   | 'gray'
+  | 'black'
   | 'global'
   | 'sign'
   | 'profileImg'
@@ -18,6 +19,10 @@ export const Style: Record<TStyleKey, CSSProperties> = {
 
   gray: {
     color: 'gray',
+  },
+
+  black: {
+    color: 'black',
   },
 
   global: {
