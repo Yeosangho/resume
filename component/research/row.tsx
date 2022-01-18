@@ -26,7 +26,14 @@ export default function ResearchRow({
         </Col>
         <Col sm={12} md={9}>
           <h4>{item.title}</h4>
-          {item.subTitle ? <i style={Style.gray}>{item.subTitle}</i> : ' '}
+          {item.subTitle ? (
+            <i style={Style.gray}>
+              {item.subTitle}
+              <br />
+            </i>
+          ) : (
+            ' '
+          )}
           {item.author ? <i style={Style.gray}>{item.author}</i> : ' '}
           <ul className="pt-3">
             {item.descriptions.map((description, descIndex) => (
