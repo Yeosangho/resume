@@ -26,8 +26,8 @@ export default function ResearchRow({
         </Col>
         <Col sm={12} md={9}>
           <h4>{item.title}</h4>
-          <i style={Style.gray}>{item.type}</i>
-          <i style={Style.gray}>{item.author}</i>
+          {item.subTitle ? <i style={Style.gray}>{item.subTitle}</i> : ' '}
+          {item.author ? <i style={Style.gray}>{item.author}</i> : ' '}
           <ul className="pt-3">
             {item.descriptions.map((description, descIndex) => (
               <li key={descIndex.toString()}>{description}</li>
