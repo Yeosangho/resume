@@ -25,7 +25,7 @@ export default function ResearchRow({
           )}
         </Col>
         <Col sm={12} md={9}>
-          <h4>{item.title}</h4>
+          <h6>{item.title}</h6>
           {item.subTitle ? (
             <i style={Style.gray}>
               {item.subTitle}

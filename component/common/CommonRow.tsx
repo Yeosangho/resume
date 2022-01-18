@@ -1,8 +1,9 @@
 import { PropsWithChildren } from 'react';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Badge } from 'reactstrap';
 import { IRow } from './IRow';
 import { Style } from './Style';
 import { CommonDescription } from './CommonDescription';
+import { HrefTargetBlank } from '.';
 
 export function CommonRows({
   index,
@@ -36,8 +37,38 @@ export function CommonRows({
           ) : (
             ''
           )}
+          {createSkillKeywords(right.skillKeywords)}
+          {right.link ? (
+            <i style={Style.black}>
+              코드 및 상세설명 : <HrefTargetBlank url={right.link} text={right.link} />
+            </i>
+          ) : (
+            ''
+          )}
         </Col>
       </Row>
     </div>
+  );
+}
+
+function createSkillKeywords(skillKeywords?: string[]) {
+  if (!skillKeywords) {
+    return '';
+  }
+  return (
+    <li>
+      <div>
+        {skillKeywords.map((keyword, index) => (
+          <Badge
+            style={Style.skillKeywordBadge}
+            key={index.toString()}
+            color="secondary"
+            className="mr-1"
+          >
+            {keyword}
+          </Badge>
+        ))}
+      </div>
+    </li>
   );
 }

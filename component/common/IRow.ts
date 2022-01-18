@@ -14,6 +14,8 @@ export declare namespace IRow {
     subTitle?: string;
     author?: string;
     descriptions?: Description[];
+    skillKeywords?: string[];
+    link?: string;
   }
 
   /**
