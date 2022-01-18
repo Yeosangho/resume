@@ -76,6 +76,67 @@ const project: IProject.Payload = {
       title: '분산 딥러닝 관련 KISTI 용역과제 수행',
       startedAt: '2018-05',
       endedAt: '2019-10',
+      where: '한국',
+      descriptions: [
+        {
+          content:
+            '역할 : 키스티 5호기 클러스터(누리온)에서의 분산 딥러닝 확장성 연구 수행을 위하여 분산학습 환경 구성을 지원함.',
+        },
+        {
+          content:
+            '인공지능 응용 연구 지원을 위한 Many Core 환경 머신러닝 플랫폼 최적화 연구(2018)',
+          weight: 'MEDIUM',
+          descriptions: [
+            // Challenge -> how -> Result
+            {
+              content:
+                'What : 키스티 5호기 클러스터에서 분산딥러닝을 구동시키기 위한 환경 설정 방안에 대해 분석함.',
+            },
+            {
+              content:
+                'Challenge : CPU 환경에서의 효과적인 구동을 위해 Caffe2를 환경에 맞추어 컴파일하고 이를 싱귤라리티 이미지로 구성해야함. 그러나, 싱귤라리티 이미지가 실제 클러스터 환경에서 잘 구동되지않음.',
+            },
+            {
+              content:
+                'Result : 싱귤라리티 이미지 구성 후, 클러스터 환경에서 실제로 분산 딥러닝을 구동하여 HPCS 학회에 공저자로 논문을 제출함.',
+            },
+            {
+              content:
+                'Limitation : 구동을 수행하였으나, 새로운 기술 요소의 적용을 수행하지 못함. 특히, 거대환경에서 분산딥러닝 수행시 발생하는 Large mini-batch 문제의 해결이 필수적임.',
+            },
+          ],
+        },
+        {
+          content: '초거대규모 CPU 기반 환경에서 딥러닝 응용의 12페타플롭스 병렬확장성 연구(2019)',
+          weight: 'MEDIUM',
+          descriptions: [
+            // Challenge -> how -> Result
+            {
+              content:
+                'What : Caffe2의 분산 딥러닝 코드에 대해 분석을 수행하여, 거대규모(2048머신) 환경에서의 분산딥러닝 실험을 지원함.',
+            },
+            {
+              content:
+                'Challenge : Caffe2의 경우, PyTorch 대비 코드의 구성이 복잡하여 이해 및 해석이 어려웠음.',
+            },
+            {
+              content:
+                'Result : Caffe2 싱귤라리티 이미지를 활용한 2048 머신에서 ResNet50의 분산 딥러닝 실험을 지원함.',
+            },
+            {
+              content:
+                'Limitation : Large mini-batch 문제를 해결할 수 있는 기존 기술들을 적용하였으나, 새로운 기술 요소를 발굴하지 못함.',
+            },
+          ],
+        },
+      ],
+      link: 'https://www.google.com',
+      skillKeywords: ['a', 'b'],
+    },
+    {
+      title: '키스티 클러스터 무상 대여 프로그램(R&D 혁신지원 프로그램) 수행',
+      startedAt: '2018-05',
+      endedAt: '2019-10',
       where: 'Bar Co., LTD.',
       descriptions: [
         { content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' },
@@ -87,7 +148,7 @@ const project: IProject.Payload = {
       skillKeywords: ['a', 'b'],
     },
     {
-      title: '키스티 클러스터 무상 대여 프로그램(R&D 혁신지원 프로그램) 2건 신청 및 통과',
+      title: '클라우드 transient 자원 기반의 고성능 분산 딥러닝을 위한 학습 기법 연구',
       startedAt: '2018-05',
       endedAt: '2019-10',
       where: 'Bar Co., LTD.',
