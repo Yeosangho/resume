@@ -19,7 +19,7 @@ export const Article = {
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
-    <CommonSection title="ARTICLE">
+    <CommonSection title="ETC">
       <ArticleRow payload={payload} />
     </CommonSection>
   );
