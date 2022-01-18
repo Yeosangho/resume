@@ -40,6 +40,8 @@ const project: IProject.Payload = {
         { content: 'Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien' },
         { content: 'Proin bibendum non nibh eu aliquet' },
       ],
+      link: 'https://www.google.com',
+      skillKeywords: ['a', 'b'],
     },
   ],
 };

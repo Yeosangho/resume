@@ -1,7 +1,7 @@
 import { ISkill } from '../component/skill/ISkill';
 
 const backend: ISkill.Skill = {
-  category: 'Back-end',
+  category: 'Deep Learning',
   items: [
     {
       title: 'Node.js',
@@ -31,7 +31,7 @@ const backend: ISkill.Skill = {
 };
 
 const database: ISkill.Skill = {
-  category: 'Database',
+  category: 'Optimization algorithm',
   items: [
     {
       title: 'MySQL',
@@ -53,7 +53,7 @@ const database: ISkill.Skill = {
 };
 
 const frontend: ISkill.Skill = {
-  category: 'Front-end',
+  category: 'Language',
   items: [
     {
       title: 'Next.js',
@@ -75,7 +75,7 @@ const frontend: ISkill.Skill = {
 };
 
 const etc: ISkill.Skill = {
-  category: 'Etc',
+  category: 'Framework',
   items: [
     {
       title: 'Ubuntu',
