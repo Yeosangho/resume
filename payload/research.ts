@@ -68,6 +68,7 @@ const research: IResearch.Payload = {
         'Distributed Deep Learning',
         'Large-scale Depp Learning',
         'Communication Scheduling',
+        'Integer Linear Programming',
         'Python',
         'Pytorch',
         'MPI',
@@ -76,6 +77,33 @@ const research: IResearch.Payload = {
         'FairScale',
       ],
       link: 'https://www.google.com',
+    },
+    {
+      title:
+        'Integrate multi-agent simulation environment and multi-agent reinforcement learning (MARL) for real-world scenario',
+      subTitle: 'ICTC 2021',
+      author: 'Sangho Yeo, Seungjun Lee, Boreum Choi, Sangyoon Oh',
+      type: '국외 학술대회',
+      firstauthor: '2',
+      coauthor: '2',
+      descriptions: ['Status : Published'],
+      skillKeywords: [
+        'Reinforcement Learning',
+        'Multi-agent Reinforcmenet Learning',
+        'Disaster Simulation',
+        'Python',
+        'PyTorch',
+      ],
+      link: 'https://www.google.com',
+    },
+    {
+      title:
+        'Accelerating Deep Reinforcement Learning Using Human Demonstration Data Based on Dual Replay Buffer Management and Online Frame Skipping',
+      subTitle: 'IEEE Bigcomp 2019',
+      author: 'Sangho Yeo, Sangyoon Oh, Minsu Lee',
+      type: '국외 학술대회',
+      descriptions: ['Status : Published'],
+      skillKeywords: ['Deep Reinforcement Learning', 'Imitation Learning', 'Python', 'Tensorflow'],
     },
     {
       title: '학습 성능 향상을 위한 차원 축소 기법 기반 재난 시뮬레이션강화학습 환경 구성 및 활용',
@@ -92,11 +120,10 @@ const research: IResearch.Payload = {
         'Python',
         'PyTorch',
       ],
-      link: 'https://www.google.com',
     },
     {
-      title: '학습 성능 향상을 위한 차원 축소 기법 기반 재난 시뮬레이션강화학습 환경 구성 및 활용',
-      subTitle: '정보처리학회논문지:소프트웨어 및 데이터공학 (KCI 등재 학술지)',
+      title: '도시 재난 대응을 위한 Multi Objective 강화학습 모델 설계',
+      subTitle: '한국차세대컴퓨팅학회 춘계학술대회',
       author: '여상호, 이승준, 오상윤',
       type: '국내 컨퍼런스',
       firstauthor: '3',
@@ -104,12 +131,40 @@ const research: IResearch.Payload = {
       descriptions: ['Status : Published'],
       skillKeywords: [
         'Reinforcement Learning',
-        'Multi-agent Reinforcmenet Learning',
+        'Multi-objective Optimization',
         'Disaster Simulation',
         'Python',
         'PyTorch',
       ],
-      link: 'https://www.google.com',
+    },
+    {
+      title:
+        'Gossip 네트워크 토폴로지 변화에 따른 Spectral gap 분석을 통한 정보 전파지연 현상 해석',
+      subTitle: 'JCCI 2021',
+      author: '여상호, 오상윤',
+      type: '국내 컨퍼런스',
+      descriptions: ['Status : Published'],
+      skillKeywords: [
+        'Distributed Deep Learning',
+        'Gossip-based Communication',
+        'Spectral gap',
+        'Python',
+      ],
+    },
+    {
+      title:
+        '도시 화재 시뮬레이션에서의 효과적인 화재 대응을 위한 강화학습 적용 솔루션의 설계 및 구현',
+      subTitle: 'ACK 2021',
+      author: '여상호, 오상윤',
+      type: '국내 컨퍼런스',
+      descriptions: ['Status : Published'],
+      skillKeywords: [
+        'Reinforcement Learning',
+        'Multi-agent Reinforcement Learning',
+        'Disaster Simulation',
+        'PyTorch',
+        'Python',
+      ],
     },
   ],
 };
