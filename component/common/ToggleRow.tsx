@@ -27,8 +27,8 @@ export function ToggleRows({
         </Col>
         <Col sm={12} md={9}>
           {right.title ? <h4>{right.title}</h4> : ''}
-          <Button color="primary" id={`toggler_${index}`} style={{ marginBottom: '1rem' }}>
-            상세설명
+          <Button color="primary" id={`toggler_${index}`}>
+            +
           </Button>
           {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
           {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
