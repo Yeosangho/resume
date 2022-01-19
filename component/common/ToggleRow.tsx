@@ -27,12 +27,13 @@ export function ToggleRows({
         </Col>
         <Col sm={12} md={9}>
           {right.title ? <h4>{right.title}</h4> : ''}
-          {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
-          {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
-          <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
+          <Button color="primary" id={`toggler_${index}`} style={{ marginBottom: '1rem' }}>
             상세설명
           </Button>
-          <UncontrolledCollapse toggler="#toggler">
+          {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
+          {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
+
+          <UncontrolledCollapse toggler={`#toggler_${index}`}>
             {right.descriptions ? (
               <CommonDescription
                 descriptions={right.descriptions}
