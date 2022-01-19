@@ -1,7 +1,7 @@
 import { DateTime } from 'luxon';
 import { PropsWithChildren } from 'react';
 import { IProject } from './IProject';
-import { CommonRows } from '../common/CommonRow';
+import { ToggleRows } from '../common/ToggleRow';
 import { IRow } from '../common/IRow';
 import Util from '../common/Util';
 import { EmptyRowCol } from '../common';
@@ -10,7 +10,7 @@ export default function ProjectRow({ payload }: PropsWithChildren<{ payload: IPr
   return (
     <EmptyRowCol>
       {payload.list.map((item, index) => {
-        return <CommonRows key={index.toString()} payload={serialize(item)} index={index} />;
+        return <ToggleRows key={index.toString()} payload={serialize(item)} index={index} />;
       })}
     </EmptyRowCol>
   );
