@@ -33,10 +33,18 @@ export function ToggleRows({
 
               {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
               {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
+              {createSkillKeywords(right.skillKeywords)}
+              {right.link ? (
+                <i style={Style.black}>
+                  코드 : <HrefTargetBlank url={right.link} text={right.link} />
+                </i>
+              ) : (
+                ''
+              )}
             </Col>
             <Col md={3}>
               <Button color="primary" size="sm" id={`toggler_${index}`}>
-                +
+                상세설명
               </Button>
             </Col>
           </Row>
@@ -47,14 +55,6 @@ export function ToggleRows({
                   descriptions={right.descriptions}
                   option={{ padding: isNeedDescriptionPadding }}
                 />
-              ) : (
-                ''
-              )}
-              {createSkillKeywords(right.skillKeywords)}
-              {right.link ? (
-                <i style={Style.black}>
-                  코드 및 상세설명 : <HrefTargetBlank url={right.link} text={right.link} />
-                </i>
               ) : (
                 ''
               )}
@@ -71,19 +71,17 @@ function createSkillKeywords(skillKeywords?: string[]) {
     return '';
   }
   return (
-    <li>
-      <div>
-        {skillKeywords.map((keyword, index) => (
-          <Badge
-            style={Style.skillKeywordBadge}
-            key={index.toString()}
-            color="secondary"
-            className="mr-1"
-          >
-            {keyword}
-          </Badge>
-        ))}
-      </div>
-    </li>
+    <div>
+      {skillKeywords.map((keyword, index) => (
+        <Badge
+          style={Style.skillKeywordBadge}
+          key={index.toString()}
+          color="secondary"
+          className="mr-1"
+        >
+          {keyword}
+        </Badge>
+      ))}
+    </div>
   );
 }
