@@ -22,7 +22,7 @@ const research: IResearch.Payload = {
         'Tensorflow',
         'OpenAI Gym',
       ],
-      link: 'https://www.google.com',
+      link: 'https://github.com/Yeosangho/dfs_er',
     },
     {
       title:

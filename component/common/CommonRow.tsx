@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import { Row, Col, Badge } from 'reactstrap';
+import { Row, Col, Badge, Button, UncontrolledCollapse } from 'reactstrap';
 import { IRow } from './IRow';
 import { Style } from './Style';
 import { CommonDescription } from './CommonDescription';
@@ -29,22 +29,27 @@ export function CommonRows({
           {right.title ? <h4>{right.title}</h4> : ''}
           {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
           {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
-          {right.descriptions ? (
-            <CommonDescription
-              descriptions={right.descriptions}
-              option={{ padding: isNeedDescriptionPadding }}
-            />
-          ) : (
-            ''
-          )}
-          {createSkillKeywords(right.skillKeywords)}
-          {right.link ? (
-            <i style={Style.black}>
-              코드 및 상세설명 : <HrefTargetBlank url={right.link} text={right.link} />
-            </i>
-          ) : (
-            ''
-          )}
+          <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
+            Toggle
+          </Button>
+          <UncontrolledCollapse toggler="#toggler">
+            {right.descriptions ? (
+              <CommonDescription
+                descriptions={right.descriptions}
+                option={{ padding: isNeedDescriptionPadding }}
+              />
+            ) : (
+              ''
+            )}
+            {createSkillKeywords(right.skillKeywords)}
+            {right.link ? (
+              <i style={Style.black}>
+                코드 및 상세설명 : <HrefTargetBlank url={right.link} text={right.link} />
+              </i>
+            ) : (
+              ''
+            )}
+          </UncontrolledCollapse>
         </Col>
       </Row>
     </div>
