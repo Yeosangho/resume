@@ -27,41 +27,39 @@ export function ToggleRows({
           </Row>
         </Col>
         <Col sm={12} md={9}>
-          {right.title ? <h4>{right.title}</h4> : ''}
-        </Col>
-      </Row>
-      <Row>
-        <Col sm={12} md={3} className="text-md-right" />
-        <Col sm={12} md={9}>
           <Row>
-            <Col sm={12} md={9}>
+            <Col md={9}>
+              {right.title ? <h4>{right.title}</h4> : ''}
+
               {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
               {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
             </Col>
-            <Col sm={12} md={3}>
+            <Col md={3}>
               <Button color="primary" size="sm" id={`toggler_${index}`}>
                 +
               </Button>
             </Col>
           </Row>
-          <UncontrolledCollapse toggler={`#toggler_${index}`}>
-            {right.descriptions ? (
-              <CommonDescription
-                descriptions={right.descriptions}
-                option={{ padding: isNeedDescriptionPadding }}
-              />
-            ) : (
-              ''
-            )}
-            {createSkillKeywords(right.skillKeywords)}
-            {right.link ? (
-              <i style={Style.black}>
-                코드 및 상세설명 : <HrefTargetBlank url={right.link} text={right.link} />
-              </i>
-            ) : (
-              ''
-            )}
-          </UncontrolledCollapse>
+          <Row>
+            <UncontrolledCollapse toggler={`#toggler_${index}`}>
+              {right.descriptions ? (
+                <CommonDescription
+                  descriptions={right.descriptions}
+                  option={{ padding: isNeedDescriptionPadding }}
+                />
+              ) : (
+                ''
+              )}
+              {createSkillKeywords(right.skillKeywords)}
+              {right.link ? (
+                <i style={Style.black}>
+                  코드 및 상세설명 : <HrefTargetBlank url={right.link} text={right.link} />
+                </i>
+              ) : (
+                ''
+              )}
+            </UncontrolledCollapse>
+          </Row>
         </Col>
       </Row>
     </div>
