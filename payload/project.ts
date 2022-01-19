@@ -71,7 +71,6 @@ const project: IProject.Payload = {
           ],
         },
       ],
-      link: 'https://github.com/Yeosangho/rcrs_marl_solution',
       skillKeywords: ['Multi-agent Reinforcement Learning', 'PyTorch', 'Java', 'Python'],
     },
     {
@@ -260,7 +259,6 @@ const project: IProject.Payload = {
           ],
         },
       ],
-      link: 'https://www.google.com',
       skillKeywords: ['a', 'b'],
     },
     {
@@ -282,7 +280,6 @@ const project: IProject.Payload = {
             'Result : GPU 임베디드 보드(Jetson TX1)의 Unified Memory를 활용한 이미지 처리 방안을 제시함.',
         },
       ],
-      link: 'https://www.google.com',
       skillKeywords: ['a', 'b'],
     },
   ],

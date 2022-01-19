@@ -30,7 +30,7 @@ const profile: IProfile.Payload = {
     },
   ],
   notice: {
-    title: '각 연구/프로젝트에 대한 상세 설명 깃헙 리포지터리 별 리드미 파일 참조 부탁드립니다.',
+    title: '각 연구에 대한 설명은 깃헙 리포지터리 별 리드미 파일 참조 부탁드립니다.',
     icon: faBell,
   },
 };
