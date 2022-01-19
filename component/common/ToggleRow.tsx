@@ -23,16 +23,15 @@ export function ToggleRows({
               <h6 style={Style.gray}>{left.title}</h6>
             </Col>
             {left.subTitle ? <Col md={12}>{left.subTitle}</Col> : ''}
-            <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
-              상세설명
-            </Button>
           </Row>
         </Col>
         <Col sm={12} md={9}>
           {right.title ? <h4>{right.title}</h4> : ''}
           {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
           {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
-
+          <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
+            상세설명
+          </Button>
           <UncontrolledCollapse toggler="#toggler">
             {right.descriptions ? (
               <CommonDescription
