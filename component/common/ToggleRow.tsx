@@ -28,7 +28,7 @@ export function ToggleRows({
         </Col>
         <Col sm={12} md={9}>
           <Row>
-            <Col md={9}>
+            <Col md={10}>
               {right.title ? <h4>{right.title}</h4> : ''}
 
               {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
@@ -42,7 +42,7 @@ export function ToggleRows({
                 ''
               )}
             </Col>
-            <Col md={3}>
+            <Col md={2}>
               <Button color="primary" size="sm" id={`toggler_${index}`}>
                 상세설명
               </Button>

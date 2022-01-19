@@ -55,7 +55,7 @@ const research: IResearch.Payload = {
         'MPI',
         'Horovod',
       ],
-      link: 'https://www.google.com',
+      link: 'https://github.com/Yeosangho/crossover-sgd',
     },
     {
       title:
@@ -94,7 +94,7 @@ const research: IResearch.Payload = {
         'Python',
         'PyTorch',
       ],
-      link: 'https://www.google.com',
+      link: 'https://github.com/Yeosangho/rcrs_marl_solution',
     },
     {
       title:

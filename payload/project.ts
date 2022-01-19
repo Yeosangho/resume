@@ -71,7 +71,7 @@ const project: IProject.Payload = {
           ],
         },
       ],
-      link: 'https://www.google.com',
+      link: 'https://github.com/Yeosangho/rcrs_marl_solution',
       skillKeywords: ['Multi-agent Reinforcement Learning', 'PyTorch', 'Java', 'Python'],
     },
     {
