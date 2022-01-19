@@ -22,16 +22,19 @@ export function ToggleRows({
             <Col md={12}>
               <h6 style={Style.gray}>{left.title}</h6>
             </Col>
-            <Col md={12}>
-              <Button color="primary" size="sm" id={`toggler_${index}`}>
-                +
-              </Button>
-            </Col>
+
             {left.subTitle ? <Col md={12}>{left.subTitle}</Col> : ''}
           </Row>
         </Col>
-        <Col sm={12} md={9}>
+        <Col sm={12} md={8}>
           {right.title ? <h4>{right.title}</h4> : ''}
+        </Col>
+        <Col sm={12} md={1}>
+          <Button color="primary" size="sm" id={`toggler_${index}`}>
+            +
+          </Button>
+        </Col>
+        <Col sm={12} md={9}>
           {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
           {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
 
