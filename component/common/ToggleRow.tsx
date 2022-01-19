@@ -34,6 +34,9 @@ export function ToggleRows({
             +
           </Button>
         </Col>
+      </Row>
+      <Row>
+        <Col sm={12} md={3} className="text-md-right" />
         <Col sm={12} md={9}>
           {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
           {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
