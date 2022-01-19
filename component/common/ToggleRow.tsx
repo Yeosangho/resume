@@ -26,21 +26,24 @@ export function ToggleRows({
             {left.subTitle ? <Col md={12}>{left.subTitle}</Col> : ''}
           </Row>
         </Col>
-        <Col sm={12} md={8}>
+        <Col sm={12} md={9}>
           {right.title ? <h4>{right.title}</h4> : ''}
-        </Col>
-        <Col sm={12} md={1}>
-          <Button color="primary" size="sm" id={`toggler_${index}`}>
-            +
-          </Button>
         </Col>
       </Row>
       <Row>
         <Col sm={12} md={3} className="text-md-right" />
         <Col sm={12} md={9}>
-          {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
-          {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
-
+          <Row>
+            <Col sm={12} md={9}>
+              {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
+              {right.author ? <i style={Style.gray}>{right.author}</i> : ''}
+            </Col>
+            <Col sm={12} md={3}>
+              <Button color="primary" size="sm" id={`toggler_${index}`}>
+                +
+              </Button>
+            </Col>
+          </Row>
           <UncontrolledCollapse toggler={`#toggler_${index}`}>
             {right.descriptions ? (
               <CommonDescription
