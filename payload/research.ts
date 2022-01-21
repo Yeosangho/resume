@@ -38,7 +38,7 @@ const research: IResearch.Payload = {
         'Pytorch',
         'OpenAI Gym',
       ],
-      link: 'https://www.google.com',
+      link: 'https://github.com/Yeosangho/sar_lb',
     },
     {
       title:
@@ -76,7 +76,7 @@ const research: IResearch.Payload = {
         'ByteScheduler',
         'FairScale',
       ],
-      link: 'https://www.google.com',
+      link: 'https://github.com/Yeosangho/mem_aware_dl_comm_schedule',
     },
     {
       title:
