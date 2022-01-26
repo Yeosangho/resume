@@ -188,6 +188,7 @@ const project: IProject.Payload = {
           ],
         },
       ],
+      skillKeywords: ['Singlularity', 'Slurm', 'PyTorch', 'Distributed Deep Learning'],
     },
     {
       title: '클라우드 transient 자원 기반의 고성능 분산 딥러닝을 위한 학습 기법 연구',
@@ -259,7 +260,11 @@ const project: IProject.Payload = {
           ],
         },
       ],
-      skillKeywords: ['a', 'b'],
+      skillKeywords: [
+        'Cloud Transient Resource',
+        'Gossip based Distributed Deep Learning',
+        'Distributed Deep Learning',
+      ],
     },
     {
       title: '구조건전성평가 응용을 위한 영상데이터 패턴인식 초고속 병렬화 연구',
@@ -280,7 +285,7 @@ const project: IProject.Payload = {
             'Result : GPU 임베디드 보드(Jetson TX1)의 Unified Memory를 활용한 이미지 처리 방안을 제시함.',
         },
       ],
-      skillKeywords: ['a', 'b'],
+      skillKeywords: ['Jetson', 'Image Classification', 'Unified Memory'],
     },
   ],
 };
