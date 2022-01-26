@@ -62,6 +62,15 @@ const research: IResearch.Payload = {
     },
     {
       title:
+        'Novel data-placement scheme for improving the data locality of Hadoop in heterogeneous environments',
+      subTitle: 'Concurrency and Compuation: Practice and Experience (Impact factor : 1.536, Q3)',
+      author: 'Minho Bae, Sangho Yeo, Gyudong Park, Sangyoon Oh',
+      type: '',
+      descriptions: ['Status : Published'],
+      skillKeywords: ['Hadoop', 'Data Locality', 'HDFS'],
+    },
+    {
+      title:
         'Crossover-SGD: A gossip-based communication in distributed deep learning for alleviating large mini-batch problem and enhancing scalability',
       subTitle: 'Concurrency and Compuation: Practice and Experience (Impact factor : 1.536, Q3)',
       author: 'Sangho Yeo, Minho Bae, Minjoong Jeong, Oh-kyoung Kwon, Sangyoon Oh',
@@ -85,15 +94,6 @@ const research: IResearch.Payload = {
       type: '',
       descriptions: ['Status : Review'],
       skillKeywords: ['Federated Learning', 'Local SGD', 'Jetson Board'],
-    },
-    {
-      title:
-        'Novel data-placement scheme for improving the data locality of Hadoop in heterogeneous environments',
-      subTitle: 'Concurrency and Compuation: Practice and Experience (Impact factor : 1.536, Q3)',
-      author: 'Minho Bae, Sangho Yeo, Gyudong Park, Sangyoon Oh',
-      type: '',
-      descriptions: ['Status : Published'],
-      skillKeywords: ['Hadoop', 'Data Locality', 'HDFS'],
     },
 
     {

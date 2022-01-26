@@ -4,6 +4,10 @@ const backend: ISkill.Skill = {
   category: 'Deep Learning',
   items: [
     {
+      title: 'Distributed Deep Learning',
+      level: 3,
+    },
+    {
       title: 'Deep Reinforcement Learning',
       level: 2,
     },
@@ -11,10 +15,7 @@ const backend: ISkill.Skill = {
       title: 'Multi-agent Reinforcement Learning',
       level: 2,
     },
-    {
-      title: 'Distributed Deep Learning',
-      level: 3,
-    },
+
     {
       title: 'Deep Learning Model for Image Classification',
       level: 1,
@@ -40,12 +41,12 @@ const frontend: ISkill.Skill = {
   category: 'Language',
   items: [
     {
-      title: 'Node.js',
-      level: 2,
-    },
-    {
       title: 'Java',
       level: 3,
+    },
+    {
+      title: 'Node.js',
+      level: 2,
     },
     {
       title: 'javascript',
