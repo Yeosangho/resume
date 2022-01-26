@@ -9,7 +9,7 @@ const research: IResearch.Payload = {
         'Memory-aware Communication Scheduling and Shard Strategy Selection for Data-parallel Distributed Deep Learning',
       subTitle: '',
       author: 'Sangho Yeo',
-      type: 'Thesis',
+      type: 'Thesis(계획)',
       descriptions: ['Status : Planned'],
       skillKeywords: [
         'Distributed Deep Learning',
