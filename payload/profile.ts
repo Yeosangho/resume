@@ -1,6 +1,7 @@
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faBlog } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 import image from '../asset/pepe.jpg';
 import { IProfile } from '../component/profile/IProfile';
 
@@ -27,6 +28,11 @@ const profile: IProfile.Payload = {
       title: 'https://github.com/Yeosangho',
       link: 'https://github.com/Yeosangho',
       icon: faGithub,
+    },
+    {
+      title: 'https://yeosangho.tistory.com/',
+      link: 'https://yeosangho.tistory.com/',
+      icon: faBlog,
     },
   ],
   notice: {
